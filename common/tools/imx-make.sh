@@ -140,7 +140,7 @@ if [ -n "${build_kernel_modules}" ]; then
     build_kernel_oot_module_flag=1;
 fi
 
-product_makefile=`pwd`/`find device/nxp -maxdepth 4 -name "${TARGET_PRODUCT}.mk"`;
+product_makefile=`pwd`/`find device/engicam -maxdepth 4 -name "${TARGET_PRODUCT}.mk"`;
 product_path=${product_makefile%/*}
 soc_path=${product_path%/*}
 nxp_git_path=${soc_path%/*}
@@ -191,7 +191,7 @@ if [ ${build_android_flag} -eq 1 ] || [ ${build_whole_android_flag} -eq 1 ]; the
     if [ -n "${build_bootimage}" ] || [ ${build_whole_android_flag} -eq 1 ]; then
         if [ ${TARGET_PRODUCT} = "evk_8mp" ] || [ ${TARGET_PRODUCT} = "evk_8mn" ] \
         || [ ${TARGET_PRODUCT} = "evk_8ulp" ] \
-        || [ ${TARGET_PRODUCT} = "evk_8mm" ] || [ ${TARGET_PRODUCT} = "evk_8mq" ]; then
+        || [ ${TARGET_PRODUCT} = "evk_8mm" ] || [ ${TARGET_PRODUCT} = "evk_8mq" ] || [ ${TARGET_PRODUCT} = "starterkit_8mm" ]; then
             mv ${OUT}/boot.img ${OUT}/boot-imx.img
             # sign prebuilt gki boot.img
             make bootimage

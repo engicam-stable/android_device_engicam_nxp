@@ -27,11 +27,11 @@
 # Copied from build/target/product/AndroidProducts.mk
 
 PRODUCT_MAKEFILES := \
-  $(LOCAL_DIR)/evk_8mm/evk_8mm.mk \
+  $(LOCAL_DIR)/starterkit_8mm/starterkit_8mm.mk \
   $(LOCAL_DIR)/evk_8mp/evk_8mp.mk
 
 COMMON_LUNCH_CHOICES := \
-  evk_8mm-user \
-  evk_8mm-userdebug \
+  starterkit_8mm-user \
+  starterkit_8mm-userdebug \
   evk_8mp-user \
   evk_8mp-userdebug
