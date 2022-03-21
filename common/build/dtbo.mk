@@ -22,7 +22,7 @@ KERNEL_SRC_ARCH := arm
 DTS_ADDITIONAL_PATH :=
 else ifeq ($(TARGET_KERNEL_ARCH), arm64)
 KERNEL_SRC_ARCH := arm64
-DTS_ADDITIONAL_PATH := freescale
+DTS_ADDITIONAL_PATH := engicam
 else
 $(error kernel arch not supported at present)
 endif

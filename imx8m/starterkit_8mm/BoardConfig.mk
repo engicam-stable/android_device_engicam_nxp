@@ -154,13 +154,13 @@ ifeq ($(TARGET_USE_DYNAMIC_PARTITIONS),true)
     TARGET_BOARD_DTS_CONFIG ?= imx8mm:imx8mm-evk-no-product.dtb
     TARGET_BOARD_DTS_CONFIG += imx8mm-ddr4:imx8mm-ddr4-evk-no-product.dtb
   else
-    TARGET_BOARD_DTS_CONFIG ?= imx8mm-ddr4:imx8mm-ddr4-evk.dtb
-    # imx8mm with MIPI-HDMI display and NXP wifi
-    TARGET_BOARD_DTS_CONFIG += imx8mm:imx8mm-evk.dtb
+    #ARGET_BOARD_DTS_CONFIG ?= imx8mm-ddr4:imx8mm-ddr4-evk.dtb
+    # imx8mm with LVDS display and LAIRD wifi
+    TARGET_BOARD_DTS_CONFIG += imx8mm:imx8mm-icore-starterkit.dtb
     # imx8mm with MIPI panel display and NXP wifi
-    TARGET_BOARD_DTS_CONFIG += imx8mm-mipi-panel:imx8mm-evk-rm67191.dtb
+    #TARGET_BOARD_DTS_CONFIG += imx8mm-mipi-panel:imx8mm-evk-rm67191.dtb
     # imx8mm with MIPI-HDMI display, NXP wifi and m4 image to support LPA
-    TARGET_BOARD_DTS_CONFIG += imx8mm-m4:imx8mm-evk-rpmsg.dtb
+    #TARGET_BOARD_DTS_CONFIG += imx8mm-m4:imx8mm-evk-rpmsg.dtb
   endif
 else
   ifeq ($(IMX_NO_PRODUCT_PARTITION),true)
