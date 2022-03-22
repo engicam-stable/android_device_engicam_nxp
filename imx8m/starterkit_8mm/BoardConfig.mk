@@ -95,17 +95,9 @@ BOARD_HOSTAPD_DRIVER         := NL80211
 BOARD_HOSTAPD_PRIVATE_LIB               := lib_driver_cmd_$(BOARD_WLAN_DEVICE)
 BOARD_WPA_SUPPLICANT_PRIVATE_LIB        := lib_driver_cmd_$(BOARD_WLAN_DEVICE)
 
-# NXP 8987 wifi support dual interface
-WIFI_HIDL_FEATURE_DUAL_INTERFACE := true
-
-# NXP 8987 wifi driver module
-BOARD_VENDOR_KERNEL_MODULES += \
-    $(TARGET_OUT_INTERMEDIATES)/MXMWIFI_OBJ/mlan.ko \
-    $(TARGET_OUT_INTERMEDIATES)/MXMWIFI_OBJ/moal.ko
-
 # -------@block_bluetooth-------
-# NXP 8987 bluetooth
-BOARD_HAVE_BLUETOOTH_NXP := true
+# LAIRD sterling-lwb bluetooth
+BOARD_HAVE_BLUETOOTH_BCM := true
 BOARD_BLUETOOTH_BDROID_BUILDCFG_INCLUDE_DIR := $(IMX_DEVICE_PATH)/bluetooth
 
 # -------@block_sensor-------

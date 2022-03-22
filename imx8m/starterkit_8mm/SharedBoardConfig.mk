@@ -67,7 +67,12 @@ BOARD_VENDOR_KERNEL_MODULES += \
     $(KERNEL_OUT)/drivers/pps/pps_core.ko \
     $(KERNEL_OUT)/drivers/ptp/ptp.ko \
     $(KERNEL_OUT)/drivers/net/phy/at803x.ko \
-    $(KERNEL_OUT)/drivers/net/ethernet/freescale/fec.ko
+    $(KERNEL_OUT)/drivers/net/ethernet/freescale/fec.ko \
+    $(KERNEL_OUT)/drivers/usb/serial/usbserial.ko \
+    $(KERNEL_OUT)/drivers/usb/serial/cp210x.ko \
+    $(KERNEL_OUT)/drivers/bluetooth/mx8_bt_rfkill.ko \
+    $(KERNEL_OUT)/drivers/net/wireless/broadcom/brcm80211/brcmutil/brcmutil.ko \
+    $(KERNEL_OUT)/drivers/net/wireless/broadcom/brcm80211/brcmfmac/brcmfmac.ko
 else
 BOARD_VENDOR_KERNEL_MODULES +=     \
     $(KERNEL_OUT)/drivers/input/touchscreen/synaptics_dsx/synaptics_dsx_i2c.ko

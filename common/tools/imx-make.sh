@@ -191,7 +191,7 @@ if [ ${build_android_flag} -eq 1 ] || [ ${build_whole_android_flag} -eq 1 ]; the
     if [ -n "${build_bootimage}" ] || [ ${build_whole_android_flag} -eq 1 ]; then
         if [ ${TARGET_PRODUCT} = "evk_8mp" ] || [ ${TARGET_PRODUCT} = "evk_8mn" ] \
         || [ ${TARGET_PRODUCT} = "evk_8ulp" ] \
-        || [ ${TARGET_PRODUCT} = "evk_8mm" ] || [ ${TARGET_PRODUCT} = "evk_8mq" ] || [ ${TARGET_PRODUCT} = "starterkit_8mm" ]; then
+        || [ ${TARGET_PRODUCT} = "evk_8mm" ] || [ ${TARGET_PRODUCT} = "evk_8mq" ]; then
             mv ${OUT}/boot.img ${OUT}/boot-imx.img
             # sign prebuilt gki boot.img
             make bootimage
