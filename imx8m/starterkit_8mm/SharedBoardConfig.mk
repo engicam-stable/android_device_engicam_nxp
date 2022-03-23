@@ -72,7 +72,8 @@ BOARD_VENDOR_KERNEL_MODULES += \
     $(KERNEL_OUT)/drivers/usb/serial/cp210x.ko \
     $(KERNEL_OUT)/drivers/bluetooth/mx8_bt_rfkill.ko \
     $(KERNEL_OUT)/drivers/net/wireless/broadcom/brcm80211/brcmutil/brcmutil.ko \
-    $(KERNEL_OUT)/drivers/net/wireless/broadcom/brcm80211/brcmfmac/brcmfmac.ko
+    $(KERNEL_OUT)/drivers/net/wireless/broadcom/brcm80211/brcmfmac/brcmfmac.ko \
+    $(KERNEL_OUT)/sound/soc/codecs/snd-soc-sgtl5000.ko
 else
 BOARD_VENDOR_KERNEL_MODULES +=     \
     $(KERNEL_OUT)/drivers/input/touchscreen/synaptics_dsx/synaptics_dsx_i2c.ko

@@ -249,6 +249,7 @@ PRODUCT_COPY_FILES += \
     $(CONFIG_REPO_PATH)/common/audio-json/ak4458_config.json:$(TARGET_COPY_OUT_VENDOR)/etc/configs/audio/ak4458_config.json \
     $(CONFIG_REPO_PATH)/common/audio-json/ak4497_config.json:$(TARGET_COPY_OUT_VENDOR)/etc/configs/audio/ak4497_config.json \
     $(CONFIG_REPO_PATH)/common/audio-json/btsco_config.json:$(TARGET_COPY_OUT_VENDOR)/etc/configs/audio/btsco_config.json \
+    $(CONFIG_REPO_PATH)/common/audio-json/sgtl5000_config.json:$(TARGET_COPY_OUT_VENDOR)/etc/configs/audio/sgtl5000_config.json \
     $(CONFIG_REPO_PATH)/common/audio-json/readme.txt:$(TARGET_COPY_OUT_VENDOR)/etc/configs/audio/readme.txt
 
 PRODUCT_COPY_FILES += \
