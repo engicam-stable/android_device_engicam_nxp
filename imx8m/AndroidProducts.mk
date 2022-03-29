@@ -28,10 +28,10 @@
 
 PRODUCT_MAKEFILES := \
   $(LOCAL_DIR)/starterkit_8mm/starterkit_8mm.mk \
-  $(LOCAL_DIR)/evk_8mp/evk_8mp.mk
+  $(LOCAL_DIR)/starterkit_8mp/starterkit_8mp.mk
 
 COMMON_LUNCH_CHOICES := \
   starterkit_8mm-user \
   starterkit_8mm-userdebug \
-  evk_8mp-user \
-  evk_8mp-userdebug
+  starterkit_8mp-user \
+  starterkit_8mp-userdebug

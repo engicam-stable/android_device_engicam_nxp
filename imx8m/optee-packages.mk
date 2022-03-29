@@ -2,7 +2,7 @@ OPTEE_PLATFORM ?= imx
 ifeq ($(TARGET_PRODUCT),$(filter $(TARGET_PRODUCT),starterkit_8mm))
 OPTEE_PLATFORM_FLAVOR ?= mx8mmevk
 else
-ifeq ($(TARGET_PRODUCT),$(filter $(TARGET_PRODUCT),evk_8mq evk_8mq_drm))
+ifeq ($(TARGET_PRODUCT),$(filter $(TARGET_PRODUCT),starterkit_8mq))
 OPTEE_PLATFORM_FLAVOR ?= mx8mqevk
 else
 $(error Invalid platform $(TARGET_PRODUCT))

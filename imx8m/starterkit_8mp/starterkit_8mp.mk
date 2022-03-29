@@ -13,9 +13,9 @@ include $(CONFIG_REPO_PATH)/imx8m/ProductConfigCommon.mk
 
 # -------@block_common_config-------
 # Overrides
-PRODUCT_NAME := evk_8mp
-PRODUCT_DEVICE := evk_8mp
-PRODUCT_MODEL := EVK_8MP
+PRODUCT_NAME := starterkit_8mp
+PRODUCT_DEVICE := starterkit_8mp
+PRODUCT_MODEL := STARTERKIT_8MP
 
 TARGET_BOOTLOADER_BOARD_NAME := EVK
 
