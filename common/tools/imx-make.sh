@@ -129,7 +129,7 @@ if [ "${build_bootloader}" = "" ] && [ "${build_kernel}" = "" ] && \
 fi
 
 # vvcam.ko need build with in-tree modules each time to make sure "insmod vvcam.ko" works
-if [ -n "${build_kernel_modules}" ] && [ ${TARGET_PRODUCT} = "evk_8mp" ]; then
+if [ -n "${build_kernel_modules}" ] && [ ${TARGET_PRODUCT} = "starterkit_8mp" ]; then
     build_vvcam="vvcam";
     build_kernel_oot_module_flag=1;
 fi

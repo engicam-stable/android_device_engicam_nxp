@@ -1,5 +1,5 @@
 # -------@block_infrastructure-------
-CONFIG_REPO_PATH := device/nxp
+CONFIG_REPO_PATH := device/engicam
 CURRENT_FILE_PATH :=  $(lastword $(MAKEFILE_LIST))
 IMX_DEVICE_PATH := $(strip $(patsubst %/, %, $(dir $(CURRENT_FILE_PATH))))
 

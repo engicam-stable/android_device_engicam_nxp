@@ -157,31 +157,32 @@ ifeq ($(TARGET_USE_DYNAMIC_PARTITIONS),true)
     TARGET_BOARD_DTS_CONFIG := imx8mp:imx8mp-evk-no-product.dtb
   else
     # Default dual basler
-    TARGET_BOARD_DTS_CONFIG := imx8mp:imx8mp-evk-dual-basler.dtb
+    #TARGET_BOARD_DTS_CONFIG := imx8mp:imx8mp-evk-dual-basler.dtb
     # basler + ov5640
-    TARGET_BOARD_DTS_CONFIG += imx8mp-basler-ov5640:imx8mp-evk-basler-ov5640.dtb
+    #TARGET_BOARD_DTS_CONFIG += imx8mp-basler-ov5640:imx8mp-evk-basler-ov5640.dtb
     # Only ov5640
-    TARGET_BOARD_DTS_CONFIG += imx8mp-ov5640:imx8mp-evk.dtb
+    #TARGET_BOARD_DTS_CONFIG += imx8mp-ov5640:imx8mp-evk.dtb
     # Only basler
-    TARGET_BOARD_DTS_CONFIG += imx8mp-basler:imx8mp-evk-basler.dtb
+    #TARGET_BOARD_DTS_CONFIG += imx8mp-basler:imx8mp-evk-basler.dtb
     # Used to support mcu image
-    ifeq ($(POWERSAVE),true)
-    TARGET_BOARD_DTS_CONFIG += imx8mp-rpmsg:imx8mp-evk-hifiberry-dacpp-m-rpmsg.dtb
-    else
-    TARGET_BOARD_DTS_CONFIG += imx8mp-rpmsg:imx8mp-evk-rpmsg.dtb
-    endif
+    #ifeq ($(POWERSAVE),true)
+    #TARGET_BOARD_DTS_CONFIG += imx8mp-rpmsg:imx8mp-evk-hifiberry-dacpp-m-rpmsg.dtb
+    #else
+    #TARGET_BOARD_DTS_CONFIG += imx8mp-rpmsg:imx8mp-evk-rpmsg.dtb
+    #endif
     # Support LVDS interface
-    TARGET_BOARD_DTS_CONFIG += imx8mp-lvds:imx8mp-evk-it6263-lvds-dual-channel.dtb
+    #TARGET_BOARD_DTS_CONFIG += imx8mp-lvds:imx8mp-evk-it6263-lvds-dual-channel.dtb
     # Support LVDS panel
-    TARGET_BOARD_DTS_CONFIG += imx8mp-lvds-panel:imx8mp-evk-jdi-wuxga-lvds-panel.dtb
+    #TARGET_BOARD_DTS_CONFIG += imx8mp-lvds-panel:imx8mp-evk-jdi-wuxga-lvds-panel.dtb
+    TARGET_BOARD_DTS_CONFIG += imx8mp:imx8mp-icore-starterkit.dtb
     # Support MIPI panel
-    TARGET_BOARD_DTS_CONFIG += imx8mp-mipi-panel:imx8mp-evk-rm67191.dtb
-    ifeq ($(POWERSAVE),true)
+    #TARGET_BOARD_DTS_CONFIG += imx8mp-mipi-panel:imx8mp-evk-rm67191.dtb
+    #ifeq ($(POWERSAVE),true)
     #Used to support powersave
-    TARGET_BOARD_DTS_CONFIG += imx8mp-powersave:imx8mp-evk-powersave.dtb
+    #TARGET_BOARD_DTS_CONFIG += imx8mp-powersave:imx8mp-evk-powersave.dtb
     #Used to support powersave and mcu image
-    TARGET_BOARD_DTS_CONFIG += imx8mp-powersave-non-rpmsg:imx8mp-evk-powersave-non-rpmsg.dtb
-    endif
+    #TARGET_BOARD_DTS_CONFIG += imx8mp-powersave-non-rpmsg:imx8mp-evk-powersave-non-rpmsg.dtb
+    #endif
   endif
 else # no dynamic parition feature
   ifeq ($(IMX_NO_PRODUCT_PARTITION),true)
