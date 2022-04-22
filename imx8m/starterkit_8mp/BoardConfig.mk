@@ -105,8 +105,8 @@ BOARD_WPA_SUPPLICANT_PRIVATE_LIB        := lib_driver_cmd_$(BOARD_WLAN_DEVICE)
 
 WIFI_HIDL_FEATURE_DUAL_INTERFACE := true
 # -------@block_bluetooth-------
-# NXP 8997 BT
-BOARD_HAVE_BLUETOOTH_NXP := true
+# LAIRD sterling-lwb bluetooth
+BOARD_HAVE_BLUETOOTH_BCM := true
 BOARD_BLUETOOTH_BDROID_BUILDCFG_INCLUDE_DIR := $(IMX_DEVICE_PATH)/bluetooth
 
 # -------@block_sensor-------

@@ -365,12 +365,6 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     WifiOverlay
 
-# nxp 8997 wifi and bluetooth combo Firmware
-PRODUCT_COPY_FILES += \
-    vendor/nxp/imx-firmware/nxp/FwImage_8997/pcieuart8997_combo_v4.bin:vendor/firmware/pcieuart8997_combo_v4.bin \
-    vendor/nxp/imx-firmware/nxp/android_wifi_mod_para.conf:vendor/firmware/wifi_mod_para.conf \
-    vendor/nxp/imx-firmware/nxp/android_wifi_mod_para_powersave.conf:vendor/firmware/wifi_mod_para_powersave.conf
-
 # Wifi regulatory
 PRODUCT_COPY_FILES += \
     external/wireless-regdb/regulatory.db:$(TARGET_COPY_OUT_VENDOR_RAMDISK)/lib/firmware/regulatory.db \
@@ -383,7 +377,7 @@ PRODUCT_PACKAGES += \
     android.hardware.bluetooth@1.0-impl \
     android.hardware.bluetooth@1.0-service
 
-#nxp 8997 Bluetooth vendor config
+# LAIRD sterling-lwb Bluetooth vendor config
 PRODUCT_PACKAGES += \
     bt_vendor.conf
 
