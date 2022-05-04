@@ -1,5 +1,5 @@
 {
-  "driver_name": "imx8mm-sgtl5000",
+  "driver_name": "imx8-sgtl5000",
   "bus_name": "bus1_system_sound_out",
   "supported_out_devices": ["speaker", "wired_headphone", "wired_headset", "bus", "line"],
   "supported_in_devices": ["builtin_mic", "wired_headset"],
